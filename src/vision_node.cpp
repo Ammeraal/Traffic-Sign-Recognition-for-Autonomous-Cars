@@ -53,8 +53,8 @@ int main(int argc, char **argv) {
                       cv::Size(32, 32),
                       cv::Size(16, 16),
                       cv::Size(32, 32),
-                      9, 1, -1, 0, 0.2,
-                      1, 64, 1);
+                      9, 1, -1, cv::HOGDescriptor::L2Hys, 0.2,
+                      true, 64, 1);
     ROS_INFO_STREAM("HOG Descriptor created");
 
     visual.imagen = cv::Mat::zeros(640, 480, CV_8UC3);

@@ -141,7 +141,7 @@ void classifier::loadTrainingImgs(std::vector<cv::Mat> &trainImgs,
     cv::Size size(64, 64);
 
     for (cv::String i : filenames) {
-        cv::Mat src = imread(i);
+        cv::Mat src = cv::imread(i);
 
         cv::resize(src, src, size);
         trainImgs.push_back(src);
@@ -155,7 +155,7 @@ void classifier::loadTrainingImgs(std::vector<cv::Mat> &trainImgs,
     cv::Size size2(64, 64);
 
     for (cv::String i : filenames2) {
-        cv::Mat src2 = imread(i);
+        cv::Mat src2 = cv::imread(i);
 
         cv::resize(src2, src2, size2);
         trainImgs.push_back(src2);
@@ -169,7 +169,7 @@ void classifier::loadTrainingImgs(std::vector<cv::Mat> &trainImgs,
     cv::Size size3(64, 64);
 
     for (cv::String i : filenames3) {
-        cv::Mat src3 = imread(i);
+        cv::Mat src3 = cv::imread(i);
 
         cv::resize(src3, src3, size3);
         trainImgs.push_back(src3);
