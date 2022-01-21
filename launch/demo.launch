@@ -2,7 +2,7 @@
   <!-- Launch world with the traffic signs -->
   <arg name="world_file"  value ="$(find traffic_sign_recognition)/world/signs_world.sdf"/>
 
-  <arg name="base"      value="$(optenv TURTLEBOT_BASE kobuki)"/> <!-- create, roomba -->
+  <arg name="base"      value="$(optenv TURTLEBOT_BASE turtlebot3_burger)"/> <!-- create, roomba -->
   <arg name="battery"   value="$(optenv TURTLEBOT_BATTERY /proc/acpi/battery/BAT0)"/>  <!-- /proc/acpi/battery/BAT0 --> 
   <arg name="gui" default="true"/>
   <arg name="stacks"    value="$(optenv TURTLEBOT_STACKS hexagons)"/>  <!-- circles, hexagons --> 
